@@ -1,0 +1,9 @@
+# Pricing-options-and-computing-implied-volatilities-using-neural-networks
+
+An option contract is a financial derivative that represents the right, but not the obligation, to buy (call) or sell (put) a particular security on (European type) or before (American type) an expiration date. Different well-known methods are available to price an option: binomial model, Monte Carlo method or using Black-Scholes formula. The choice of the accurate mathematical model and numerical method generally depends on the option features: path-dependent, early exercice or not, low or high dimension. 
+
+Nevertheless, these valuation methods make specific assumptions of the underlying dynamic and could mismatches empirical findings. For instance, the Black-Scholes model assumes constant underlying volatility and consequently fails to explain the relationship between the implied volatility and option moneyness. More generally, the multi-dimensionality of real-world derivative valuation problems does not always guarantee the existence of a closed-form formula to price a derivative. 
+
+In order to overcome that, deep learning algorithms have become popular by making a trade-off between accuracy and efficient numerical performance. Among them, Artificial Neural Networks (ANN) have the advantage of being able to accurately and efficiently approximate non-linear price relationships without making specific hypothesis regarding the underlying dynamic. 
+
+This project aims to reproduce the work introduced in \cite{PONN} in which the authors propose a neural-network based approach to price European call options and compute implied volatilities. After having established the mathematical framework of this work (Section 2), we challenge the ANN approach (Section 3) with analytical solutions: Black-Scholes equation, COS method for the Heston stochastic volatility model and Brent’s iterative root-finding method for the calculation of implied volatilities (Section 4).
